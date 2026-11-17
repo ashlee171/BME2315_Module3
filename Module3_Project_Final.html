@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Module3_Project_Template</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Module3_Project_Final</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7892,7 +7892,7 @@ c)	Provide the fitted value of Kd for Cavalitide. Interpret the Kd of Cavalitide
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [50]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Task 1: adapted from fit_semaglutide_GLP1R.py</span>
@@ -7998,7 +7998,7 @@ c)	Provide the fitted value of Kd for Cavalitide. Interpret the Kd of Cavalitide
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [51]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Task 2.1: semaglutidePK.py with solve_ivp instead of Euler's method</span>
@@ -8079,7 +8079,7 @@ c)	Provide the fitted value of Kd for Cavalitide. Interpret the Kd of Cavalitide
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [52]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Task 2.2: Cavalitide daily pill with faster absorption (other parameters same as Wegovy)</span>
@@ -8132,7 +8132,7 @@ c)	Provide the fitted value of Kd for Cavalitide. Interpret the Kd of Cavalitide
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [53]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Task 2.3: lower the dose from 25 mg to 21 mg per daily pill</span>
@@ -8189,7 +8189,7 @@ c)	Provide the fitted value of Kd for Cavalitide. Interpret the Kd of Cavalitide
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Task-3:-Simulate-a-combined-pharmacokinetics-pharmacokinetics-(PKPD)-model-that-predicts-GLP1-receptor-activity-during-treatment">Task 3: Simulate a combined pharmacokinetics-pharmacokinetics (PKPD) model that predicts GLP1 receptor activity during treatment<a class="anchor-link" href="#Task-3:-Simulate-a-combined-pharmacokinetics-pharmacokinetics-(PKPD)-model-that-predicts-GLP1-receptor-activity-during-treatment">¶</a></h2><p>The Phase 1 clinical trial was a success, and we achieved the desired 0.5 nM concentration of Cavalitide in your patients. Now it’s time to further customize the dosing for the Phase 2 clinical trial, where we are more interested in efficacy. We will need to combine the PK model (Task 2) and PD model (Task 1) to predict how the fraction of activated receptors changes over time.</p>
+<h2 id="Task-3:-Simulate-a-combined-pharmacokinetics-pharmacokinetics-(PKPD)-model-that-predicts-GLP1-receptor-activity-during-treatment">Task 3: Simulate a combined pharmacokinetics-pharmacokinetics (PKPD) model that predicts GLP1 receptor activity during treatment<a class="anchor-link" href="#Task-3:-Simulate-a-combined-pharmacokinetics-pharmacokinetics-(PKPD)-model-that-predicts-GLP1-receptor-activity-during-treatment">¶</a></h2><p>The Phase 1 clinical trial was a success, and we achieved the desired 0.5 nM concentration of Cavalitide in our patients. Now it’s time to further customize the dosing for the Phase 2 clinical trial, where we are more interested in efficacy. We will need to combine the PK model (Task 2) and PD model (Task 1) to predict how the fraction of activated receptors changes over time.</p>
 <ol>
 <li>Embed the ligand-receptor model of Cavalitide (from Task 1, but just using our optimized Kd) into our cavalitidePK.py model. Let’s call this combined model cavalitidePKPD.py. Predict how the fraction of active GLP1R receptors changes over the first 100 days of treatment.</li>
 <li>Further optimize your dosing strategy so that you achieve close to 90% active GLP1 receptors at steady state (around 100 days).  Which dosing parameters did we adjust? Provide an interpretation of the clinical benefits of this adjustment.</li>
@@ -8213,7 +8213,7 @@ c)	Provide the fitted value of Kd for Cavalitide. Interpret the Kd of Cavalitide
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [54]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Task 3.1: cavalitidePKPD.py = PK model (Task 2) + receptor binding model (Task 1)</span>
@@ -8268,7 +8268,7 @@ c)	Provide the fitted value of Kd for Cavalitide. Interpret the Kd of Cavalitide
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [55]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Task 3.2: raise the dose to 29 mg per daily pill</span>
@@ -8315,7 +8315,7 @@ c)	Provide the fitted value of Kd for Cavalitide. Interpret the Kd of Cavalitide
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Task 3.2:</strong> We increased the dose from 21 mg to <strong>29 mg per pill</strong> (still once daily, other parameters unchanged), which gives about <strong>90% active GLP1 receptors</strong> at steady state.</p>
+<p><strong>Task 3.2:</strong> We increased the dose from 21 mg to 29 mg per pill (still once daily, other parameters unchanged), which gives about 90% active GLP1 receptors at steady state.</p>
 <p><strong>Clinical benefits:</strong> more active receptors should mean stronger appetite suppression and more weight loss, still with one pill a day. At 90%, the receptors are almost saturated, so the effect stays steady even if a patient's drug level varies a little. Going much above 90% would need a lot more drug for little extra benefit and more risk of side effects.</p>
 </div>
 </div>
@@ -8336,7 +8336,7 @@ c)	Provide the fitted value of Kd for Cavalitide. Interpret the Kd of Cavalitide
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [56]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 1) Goodness of fit for the cavalitide fit (Task 1): R^2 = 1 - SSE/SST</span>
@@ -8405,7 +8405,7 @@ Model half-life = ln(2)/ke = 178 h = 7.4 days
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [57]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># GLP1R activation with Cavalitide vs. semaglutide, using the same PK and PD models</span>
@@ -8574,7 +8574,7 @@ Cavalitide: steady-state Fact = 0.90
 <li>Rubino F, Cummings DE, Eckel RH, et al. Definition and diagnostic criteria of clinical obesity. <em>Lancet Diabetes Endocrinol</em>. 2025;13(3):221-262. doi:<a href="https://doi.org/10.1016/S2213-8587(24)00316-4">10.1016/S2213-8587(24)00316-4</a></li>
 <li>Busebee B, Ghusn W, Cifuentes L, Acosta A. Obesity: a review of pathophysiology and classification. <em>Mayo Clin Proc</em>. 2023;98(12):1842-1857. doi:<a href="https://doi.org/10.1016/j.mayocp.2023.05.026">10.1016/j.mayocp.2023.05.026</a></li>
 <li>Wilding JPH, Batterham RL, Calanna S, et al. Once-weekly semaglutide in adults with overweight or obesity. <em>N Engl J Med</em>. 2021;384(11):989-1002. doi:<a href="https://doi.org/10.1056/NEJMoa2032183">10.1056/NEJMoa2032183</a></li>
-<li>BME 2315 Module 3 course materials: lectures, November 10 class notes, and class code (fit_semaglutide_GLP1R.py, semaglutidePK.py, semaglutide_data.csv, cavalitide_data.csv). University of Virginia; 2026.</li>
+<li>BME 2315 Module 3 course materials: class code (fit_semaglutide_GLP1R.py, semaglutidePK.py, semaglutide_data.csv, cavalitide_data.csv). University of Virginia; 2026.</li>
 <li>Lau J, Bloch P, Schäffer L, et al. Discovery of the once-weekly glucagon-like peptide-1 (GLP-1) analogue semaglutide. <em>J Med Chem</em>. 2015;58(18):7370-7380. doi:<a href="https://doi.org/10.1021/acs.jmedchem.5b00726">10.1021/acs.jmedchem.5b00726</a></li>
 <li>Novo Nordisk. Ozempic (semaglutide) injection, for subcutaneous use: prescribing information. US Food and Drug Administration; revised October 2025. Accessed November 15, 2026. <a href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/209637s035%2C209637s037lbl.pdf">https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/209637s035%2C209637s037lbl.pdf</a></li>
 </ol>
